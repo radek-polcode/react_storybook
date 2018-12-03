@@ -10,8 +10,11 @@
     "@storybook/addon-knobs": "^4.0.11",
     "@storybook/addons": "^4.0.11",
     "@storybook/react": "^4.0.11",
+    "@types/react": "^16.7.11",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
-    "storybook-addon-jsx": "^6.0.0"
+    "storybook-addon-jsx": "^6.0.0",
+    "typescript": "^3.2.1"
   },
   "dependencies": {
     "babel-loader": "^8.0.4",

@@ -3,7 +3,7 @@ import { wInfo } from './utils';
 
 import { storiesOf } from '@storybook/react/dist/client/preview';
 import { Button } from './Button';
-import { color } from '@storybook/addon-knobs/react';
+import { text, boolean } from '@storybook/addon-knobs/react';
 
 storiesOf('Button', module)
   .addWithJSX(
@@ -18,5 +18,9 @@ storiesOf('Button', module)
     <Button bg="palegoldenrod">Hello World</Button>
   )))
   .addWithJSX('with background 2', () => (
-    <Button bg={color('bg', 'green', 'group1')}>Hello World</Button>
+    <Button
+      disabled={boolean('disabled', false)}
+    >
+      {text('text', 'Hello world')}
+    </Button>
   ));
